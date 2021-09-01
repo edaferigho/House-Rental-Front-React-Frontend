@@ -1,0 +1,74 @@
+
+.dashboard{
+    background-color: #E5E5E5;
+    padding-bottom: 4rem;
+    /* display: flex; */
+}
+.dashboard_nav{
+    width: 22.5rem;
+   height: 127rem;
+   background-color:#089BC9;
+   position: fixed;
+   top: 7.5rem;
+   left: 0;
+   overflow-x: hidden;
+}
+.dashboard_nav ul{
+    padding-top: 5.44rem;
+    margin-left: 4.5rem;
+}
+.dashboard_nav ul >li {
+    list-style: none;
+    font-size: 1.13rem;
+    line-height: 1.69rem;
+    font-weight: 600;
+    margin-bottom: 2.31rem;
+}
+.dashboard_nav ul >li a{
+    text-decoration: none;
+    color: #fff;
+}
+.dashboard_nav ul >li span{
+    margin-right: 2.25rem;
+}
+.dashboard_content{
+    background-color: transparent;
+    width: 75%;
+    position: relative;
+    top: 7.5rem;
+    margin-top: 2rem;
+    margin-left: 22.5rem;
+    margin-right: 7.63rem;
+    padding-left: 4.25rem;
+    margin-bottom: 10rem;
+    
+}
+.dashboard_content>button{
+    width: 13.06rem;
+    height: 3.5rem;
+    border-radius: 0.75rem;
+    background-color: #089BC9;
+    color: #fff;
+    position: relative;
+    left: 51.94rem;
+    border: none;
+    cursor: pointer;
+}
+.dashboard_content>.Link>button{
+    width: 13.06rem;
+    height: 3.5rem;
+    margin-top: 3%;
+    border-radius: 0.75rem;
+    background-color: #089BC9;
+    color: #fff;
+    position: relative;
+    left: 73%;
+    border: none;
+    cursor: pointer;
+}
+.properties{
+    margin-top: 2rem;
+     display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 32px;
+}

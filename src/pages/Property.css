@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Poppins,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #E5E5E5;
+}
+.property{
+    background-color: transparent;
+    padding: 11.5rem 7.5rem 0 7.5rem;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+.head p{
+ font-size: 1.5rem;
+ line-height: 2.25rem;
+ font-weight: 700;
+}
+.property-agent{
+    display: flex;
+    margin-top: 1rem;
+}
+.property-agent>img{
+    border-radius: 0.75rem;
+    min-width:55.75rem;
+     max-width:55.75rem;
+    height:32.69rem;
+}
+.user-card{
+    background-color: #fff;
+    width: 17.25rem;
+    height: 25.19rem;
+   margin-left: 2rem;
+   border-radius: 0.75rem;
+}
+.user-details{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mark{
+    color:#E02828;
+    font-size: 1.88rem;
+}
+
+.user-details img{
+    width:8.75rem;
+    height:8.75rem;
+    border-radius: 50%;
+}
+#user-name{
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    font-weight: 400;
+    text-align: center;
+}
+#user-role{
+    font-size: 0.88rem;
+    line-height: 1.31rem;
+    font-weight: 300;
+   text-align: center;
+}
+.contact-agnt{
+    display: flex;
+    flex-direction: column;
+}
+.contact-agnt button{
+
+height: 2.25rem;
+border-radius: 0.75rem;
+font-size: 1.13rem;
+font-weight: 500;
+line-height: 1.69rem;
+background-color: #089BC9;
+color: #fff;
+margin-top: 1rem;
+border: none;
+}
+.contact-btn{
+    width: 17.25rem;
+    height: 3.5rem;
+    background-color: #089BC9;
+    margin-left: 2rem;
+    color: #fff;
+    border-radius: 0.75rem;
+    border: none;
+    margin-top: 0.25rem;
+    font-size: 1.13rem;
+    line-height: 1.69rem;
+    font-weight: 500;
+}
+.img-group{
+    margin-top: 1rem;
+    width: 67%;
+    height: 11rem;
+    
+}
+.img-group img{
+    width: 17.25rem;
+    height: 9.5rem;
+    border-radius: 0.75rem;
+    margin-right: 2rem;
+}
+.property-desc{
+    width:55.75rem;
+    height: 25rem;
+    background-color: #fff;
+    border-radius: 0.75rem;
+    margin-top: 5rem;
+    padding: 1.5rem;
+    overflow-y: auto;
+    background-color: #FCFFFE;
+}
+.property-desc >p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.25rem;
+    
+}
+.gen-description{
+    margin-top: 1.25rem;
+}
+.gen-description h3{
+    font-size: 1.13rem;
+    line-height: 1.69rem;
+    font-weight: 500;
+}
+.gen-description p{
+    font-size: 0.88rem;
+    line-height: 1.31rem;
+    font-weight: 400;
+}
+.location-desc{
+     width:55.75rem;
+    height: 28.88rem;
+    background-color: #fff;
+    border-radius: 0.75rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.location-desc >p{
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    font-weight: 500;
+    margin: 16px 0 0 1rem;
+    padding-top: 1rem;
+    
+}
+.location-desc img{
+    width: 53.75rem;
+    height: 23.63rem;
+    margin: 1rem;
+}

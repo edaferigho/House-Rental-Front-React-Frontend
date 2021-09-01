@@ -1,0 +1,119 @@
+.signup-page{
+   width:61rem;
+   height: 45rem; 
+   background-color: #FCFFFE;
+   position: fixed;
+   top: 0.5rem;
+   left:19rem;
+   box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.08);
+    border-radius: 0.5rem;
+    z-index: 1010;
+    display: none;
+    padding-top: 1.6rem;
+}
+.show{
+    display: block;
+}
+.top-level{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-page p{
+    text-align: center;
+    font-size: 1.13rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    
+}
+.signup-page #big{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3.75rem;
+    margin-top: 0.31rem;
+}
+.form-level{
+    display: flex;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin: 1.2rem ;
+}
+.form-group input{
+    width: 23.69rem;
+    height:3rem !important;
+    border: 1px solid #089BC9;
+    border-radius: 0.75rem;
+    outline: none;
+    font-size: 100%;
+    padding-left: 1rem;
+}
+.form-group label{
+    font-size: 1.13rem;
+    font-weight: 500;
+    line-height: 1.3rem !important;
+}
+.form-group >input:focus{
+    border: 2px solid #089BC9;
+    box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.08);
+    
+}
+.password-field{
+    display: flex;
+}
+.password-field i{
+    font-size: 1.56rem;
+    color: #089BC9;
+    /* margin-left: -1.88rem;
+    margin-top: 0.5rem; */
+    cursor: pointer;
+}
+.privacy-group input{
+    width: 1.5rem;
+    height: 1.3rem;
+    margin-left: 4.50rem;
+    border: 2px solid #089BC9;
+    border-radius: 0.5rem;
+    background-color:#089BC9; 
+}
+.privacy-group span{
+    font-size: 1.13rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+    margin-left: 1rem;
+}
+.privacy-group span a{
+    text-decoration: none;
+    color:#089BC9;
+}
+.signup-btn #btn{
+    width: 30rem;
+    height: 3.5rem;
+    background-color: #089BC9;
+    border-radius: 0.5rem;
+    margin-left: 15.56rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.13rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    
+}
+.signup-btn p button{
+    background-color: transparent;
+    border:none;
+    text-decoration: none;
+    color: #089BC9;
+    font-size: 1.13rem;
+
+    line-height: 2.1rem;
+
+    line-height: 2.44rem;
+
+    cursor: pointer;
+}

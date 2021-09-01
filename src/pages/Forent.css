@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.forRent{
+
+    width: 100% !important;
+
+    width: 100%;
+
+    margin-top: 12.5rem;
+   
+    background-color: transparent;
+    /* padding:5rem 7.5rem 0 7.5rem; */
+   overflow-x: hidden;
+}
+.search-bar{
+    width: 83.5% !important;
+    height: 6.25rem;
+    margin: 0 7.5rem !important;
+
+    width: 83.33rem;
+    height: 6.25rem;
+    margin: 0 7.5rem;
+    background-color: #fff;
+    opacity: 0.6;
+    display: flex;
+    align-items: center;
+    padding: 0 2.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.08);
+}
+.search-bar select, input{
+    width: 11.25rem;
+    height: 2.5rem;
+    background-color: #F8F8F8;
+    border: 0.02rem solid #2B2B2B;
+    border-radius: 0.75rem;
+    margin-right: 1.5rem;
+    color: #2B2B2B;
+}
+.search-bar input:focus{
+    outline:none;
+}
+#search_logo2{
+      font-size: 1.70rem;
+    position: relative;
+    left: -2.50rem;
+    color: #2B2B2B;
+    cursor: pointer;
+}
+.search-bar input {
+    margin-left: auto;
+    margin-right: 0;
+    padding-left: 0.88rem;
+}
+.property_collection{
+    margin-top: 4rem;
+    margin-left: 8.33%;
+    margin-right: 8.33%;
+
+    display: grid;
+    width: 83.33%;
+    margin-bottom: 5.06rem;
+    grid-template-columns: 2fr 2fr 2fr 2fr !important;
+    grid-template-rows: 0fr 0fr !important;
+    gap: 1.1%;
+
+      display: grid;
+      width: 83.33%;
+      margin-bottom: 5.06rem;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   /* grid-template-rows: 1fr 1fr; */
+   gap: 4.2rem;
+
+   
+}
+.paginationButtons{
+    width: 17.56rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin:4rem auto;
+   
+    
+}
+.paginationButtons a{
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  border: 0.06rem solid #DFE3E8;
+    border-radius: 0.25rem;
+    background-color: #fff;
+    cursor:pointer;
+}
+.paginationActive{
+    border: 0.06rem solid #089BC9;
+    color:#089BC9;
+}
+.previousButton,.nextButton{
+    color: #DFE3E8;
+}
+.previousButton:hover,.nextButton:hover{
+    background-color: #919EAB;
+    opacity: 0.5;
+    color:#C4CDD5;
+}

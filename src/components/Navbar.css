@@ -1,0 +1,157 @@
+*{
+    margin:0 ;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Poppins,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* .navbarSection{
+    
+} */
+.navbar{
+
+    width: 100% !important;
+
+    width: 100%;
+
+    height: 7.5rem;
+    background-color: #FCFFFE;
+    box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.08);
+    display: flex;
+
+    padding: 2rem 6%;
+
+    padding: 2rem 7.5rem;
+
+    align-items: baseline;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+
+}
+.logo{
+    margin-bottom: 0.31rem;
+}
+
+.nav-items{
+  margin-left: auto;
+}
+.nav-items > li{
+    list-style: none;
+    display: inline;
+}
+.nav-items >li button{
+ text-transform: uppercase;
+ background-color: transparent;
+ border: none;
+ color:  #089BC9;
+ font-weight: 500;
+ line-height: 1.69rem;
+ font-size: 1.13rem;
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.nav-items >li .signin{
+   background-color: #089BC9;
+    border-radius: 0.75rem;
+    color: #fff;
+    margin-left: auto; 
+    margin-bottom: 2rem;
+    width:11rem;
+    height: 3.5rem;
+}
+
+.nav-drawer{
+    background-color:#FCFFFE ;
+    position: fixed;
+    width: 100%;
+    padding-left: 1.25rem;
+    height: 18.75rem;
+    transition: all 0.3s linear;
+    display: none;
+     box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.08);
+     z-index: 800;
+}
+
+.show{
+    display: block;
+    height: 18.75rem;
+    transform: translateX();
+}
+.nav-drawer>li{
+    list-style: none;
+}
+.nav-drawer > li button{
+    background-color: transparent;
+    border:none;
+    font-size: 1.13rem;
+    font-weight: 500;
+     color: #089BC9;
+     margin: 1.25rem 0 0 1.25rem;
+     text-transform: uppercase;
+     transition: all 0.3s linear;
+     cursor: pointer;
+}
+.nav-drawer > li button:hover{
+    transform:translateX(0.63rem)
+}
+.navbar span{
+    font-size: 1.88rem;
+    color:#089BC9 ;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* media query */
+
+@media screen and (max-width:768px){
+    .navbar{
+        padding: 1.75rem 3.13rem;
+    }
+    .navbar span{
+        margin-left: auto;;
+        display: block;
+    }
+    .nav-items{
+        display: none;
+    }
+
+}
+@media screen and (max-width:1065px){
+     .navbar{
+        padding: 25px 45px;
+    }
+    .nav-items >li button{
+        font-size: 12px;
+    }
+    .nav-items >li .signup{
+        width:100px;
+        height: 45px;
+    }
+     .nav-items >li .signin{
+        width:100px;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width:1350px){
+     .navbar{
+        padding: 28px 50px;
+    }
+    .nav-items >li button{
+        font-size: 14px;
+    }
+    .nav-items >li .signup{
+        width:130px;
+        height: 45px;
+    }
+     .nav-items >li .signin{
+        width:130px;
+        height: 45px;
+    }
+}

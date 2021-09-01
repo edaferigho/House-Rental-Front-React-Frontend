@@ -1,0 +1,14 @@
+*{
+  margin:0 ;
+  padding:0;
+  box-sizing: border-box;
+
+}
+body{
+font-family: Poppins 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+background-color: #e5e5e5;
+width: 100% !important;
+}
+.App{
+  width: 100% !important;
+}

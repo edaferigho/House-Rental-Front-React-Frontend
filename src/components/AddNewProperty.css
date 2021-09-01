@@ -1,0 +1,226 @@
+/* Form */
+.form_container{
+  width: 70% !important;
+}
+.myform{
+position: absolute;
+width: 70% !important;
+height: 1296px;
+left: 28%;
+top: 200px;
+background: #FFFFFE;;
+border-radius: 12px;
+padding: 5%;
+
+/* B2 WEB MEDIUM POPPINS 18 */
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+text-transform: capitalize;
+color: #000000;
+/* border: 1px solid #089BC9; */
+}
+.inputTitle{
+width: 100%;
+height: 56px;
+left: 469px;
+top: 296px;
+
+/* PRIMARY/BRAND COLOUR */
+border: 1px solid #089BC9 !important;
+box-sizing: border-box !;
+border-radius: 8px;
+}
+.form-label{
+  width: 90% !important;
+}
+/* .form-control {
+  display: block;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  } */
+  .typeprop{
+    /* position: absolute; */
+    width: 100% !important;
+    height: 56px;
+    left: 469px;
+    top: 420px;
+    
+    /* PRIMARY/BRAND COLOUR */
+    border: 1px solid #089BC9 !important;
+    box-sizing: border-box;
+    border-radius: 12px;
+  }
+  .No_bedroom{
+width: 100% !important;
+height: 56px;
+left: 828px;
+top: 419px;
+
+/* PRIMARY/BRAND COLOUR */
+
+border: 1px solid #089BC9;
+box-sizing: border-box;
+border-radius: 12px;
+  }
+.Car_Park{
+  width: 100% !important;
+height: 56px;
+left: 1084px;
+top: 419px;
+
+/* PRIMARY/BRAND COLOUR */
+
+border: 1px solid #089BC9;
+box-sizing: border-box;
+border-radius: 12px;
+}
+.City_form{
+width: 100% !important;
+height: 56px;
+left: 469px;
+top: 543px;
+
+border: 1px solid #089BC9;
+box-sizing: border-box;
+border-radius: 12px;
+}
+.Local_Goverment_Area{
+width: 100% !important;
+height: 56px;
+left: 880px;
+top: 543px;
+
+/* PRIMARY/BRAND COLOUR */
+
+border: 1px solid #089BC9;
+box-sizing: border-box;
+border-radius: 12px;
+}
+.Landmark{
+width: 100% !important;
+height: 168px;
+left: 468px;
+top: 666px;
+
+/* PRIMARY/BRAND COLOUR */
+
+border: 1px solid #089BC9;
+box-sizing: border-box;
+border-radius: 12px;
+}
+.Additional_Features{
+width: 100% !important;
+height: 168px;
+left: 880px !important;
+top: 666px;
+
+/* PRIMARY/BRAND COLOUR */
+
+border: 1px solid #089BC9;
+box-sizing: border-box;
+border-radius: 8px;
+}
+.amountinput{
+  width: 100% !important;
+height: 56px;
+left: 470px;
+top: 901px;
+
+/* PRIMARY/BRAND COLOUR */
+
+border: 1px solid #089BC9;
+box-sizing: border-box;
+border-radius: 12px;
+}
+.phoneNo{
+  width: 100% !important;
+height: 56px;
+left: 881px;
+top: 901px;
+
+/* PRIMARY/BRAND COLOUR */
+
+border: 1px solid #089BC9;
+box-sizing: border-box;
+border-radius: 12px;
+}
+.field{
+  width: 100% !important;
+}
+.fileupload{
+width: 100% !important;
+height: 320px !important;
+left: 469px !important;
+top: 1024px !important;
+background-color: #da0606 !important;
+
+/* PRIMARY/BRAND COLOUR */
+
+border: 1px solid #089BC9;
+box-sizing: border-box;
+border-radius: 12px !important;
+}
+.ADD_NEW{
+  position: absolute;
+width: 70%;
+height: 56px;
+left: 5% !important;
+top: 92%;
+margin-top: 3% !important;
+margin-left: 100px;
+border: 0px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+
+/* PRIMARY/BRAND COLOUR */
+
+background: #089BC9;
+border-radius: 12px;
+}
+.btn_addProperty{
+position: sticky !important;
+width: 220px !important;
+height: 56px !important;
+left: 535px !important;
+/* background-image: url('./Pages/image/imageuploadfill.JPG') !important;
+background-repeat: no-repeat;
+background-size: cover; */
+top: 231px !important;
+border: 1px solid #089BC9 !important;
+box-sizing: border-box !important;
+border-radius: 12px !important;
+font-family: Poppins !important;
+font-style: normal !important;
+font-weight: 500 !important;
+font-size: 18px !important;
+line-height: 40px !important;
+text-align: left !important;
+/* identical to box height */
+
+
+color: #000000;
+}

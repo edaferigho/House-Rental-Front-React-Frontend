@@ -1,0 +1,92 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.card{
+    background-color: #fff;
+
+    width: 276px;
+    height: 429px !important;
+
+    width: 17.25rem;
+    height: 26.81rem;
+
+    border-radius: 12px;
+}
+
+.card img{
+    width: 100%;
+    height: 13.13rem;
+    border-radius: 0.75rem 0.75rem 0 0;
+}
+.card .title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2.25rem;
+    margin:8px 0.75rem;
+
+    text-transform: capitalize;
+
+}
+#date{
+    font-size: 0.75rem;
+    line-height: 1.13rem;
+    font-weight: 300;
+    color: #808080;
+    margin-left: 0.81rem;
+    margin-bottom: 0.6rem;
+}
+.card .card-details{
+    display: flex;
+    margin: 0 0.75rem;
+
+}
+.card .price{
+    font-weight: bolder;
+}
+.vert-line{
+  border-left:0.06rem solid #C4C4C4;
+    height: 1.25rem;
+     margin-right: 1.25rem;
+
+}
+.card-details p{
+    margin-right: 1.25rem;
+    font-size: 1.13rem;
+    line-height: 1.69rem;
+    font-weight: 300;
+}
+.card-details span{
+    font-size: 1.13rem;
+    margin-right: 1.25rem;
+}
+.engage-bar{
+    display: flex;
+    margin: 0 0.75rem;
+    align-items: center;
+    
+}
+.engage-bar span{
+    font-size: 1.13rem;
+    margin-right: 1.88rem;
+    cursor: pointer;
+}
+.engage-bar button{
+    width: 8.44rem;
+    height: 2.25rem;
+    border-radius: 0.75rem;
+    border : 0.06rem solid #007195;
+    color:#007195;
+    background-color: transparent;
+    font-size: 0.88rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    line-height: 1.31rem;
+    margin-left: auto;
+    cursor: pointer;
+}
+#link button{
+    margin-bottom: 0% !important;
+}

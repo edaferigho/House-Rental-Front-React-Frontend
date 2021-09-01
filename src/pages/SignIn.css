@@ -1,0 +1,118 @@
+.signin-page{
+   width:33.75rem;
+   height: 35.25rem; 
+   padding-top: 1rem;
+   background-color: #FCFFFE;
+   position: fixed;
+   top: 5rem;
+   left:33.13rem;
+   box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.08);
+    border-radius: 0.5rem;
+    z-index: 1010;
+    display: none;
+}
+.show{
+    display: block;
+}
+.error{
+    color: red;
+}
+
+
+.signin-page p{
+    text-align: center;
+    font-size: 1.13rem;
+    font-weight: 300;
+    line-height: 1.69rem;
+    
+}
+.signin-page #big{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3.75rem;
+    margin-top: 0.31rem;
+}
+.form-signin{
+    margin: auto;
+}
+
+.form-group input{
+    
+    height:3.5rem;
+    border: 1px solid #089BC9;
+    border-radius: 0.75rem;
+    outline: none;
+    font-size: 100%;
+}
+.large-input{
+    width: 30.25rem !important;
+}
+.form-group label{
+    font-size: 1.13rem;
+    font-weight: 500;
+    line-height: 1.69rem;
+}
+.form-group >input:focus{
+    border: 2px solid #089BC9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
+    
+}
+.password-field{
+    display: flex;
+}
+.password-field i{
+    position: relative;
+    font-size: 1.56rem;
+    color: #089BC9;
+    left: -1.8rem;
+    margin-left: -1.95rem;
+    margin-top: 0.3rem;
+    cursor: pointer;
+}
+.remember-me input{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 1.76rem;
+    border: 2px solid #089BC9;
+    border-radius: 0.5rem;
+    background-color:#089BC9; 
+}
+.remember-me span{
+    font-size: 1.13rem;
+    font-weight: 500;
+    line-height: 1.69rem;
+    margin-left: 1rem;
+}
+.remember-me span a{
+    text-decoration: none;
+    color:#089BC9;
+    margin-left: 7.25rem;
+}
+
+.signin-btn #btn{
+    width: 23.69rem;
+    height: 3.5rem;
+    background-color: #089BC9;
+    border-radius: 0.5rem;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.13rem;
+    font-weight: 500;
+    line-height: 1.69rem;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    
+}
+.signin-btn p button{
+    background-color: transparent;
+    border:none;
+    text-decoration: none;
+    color: #089BC9;
+    font-size: 1.13rem;
+    line-height: 2.25rem;
+    cursor: pointer;
+
+}

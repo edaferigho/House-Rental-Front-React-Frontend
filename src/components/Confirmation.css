@@ -1,0 +1,43 @@
+.confirmation{
+    width: 28rem;
+    height: 25rem;
+    background-color: #fff;
+    position: fixed;
+    top: 8rem;
+    left: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.75rem;
+    box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.08);
+     z-index: 1010;
+}
+
+
+.confirmation img{
+    width: 10rem;
+    display: block;
+}
+.confirmation p{
+    font-size: 1.38rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+}
+.confirmation button{
+    background-color: transparent;
+    font-size: 1.13rem;
+    line-height: 1.69rem;
+    font-weight: 500;
+    color: #089BC9;
+    border: none;
+    margin-top:2.5rem;
+    cursor: pointer;
+    
+}
+.show-confirm{
+    display:block;
+}
+.hide-comfirm{
+    display: none;
+}
