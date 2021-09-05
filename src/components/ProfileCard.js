@@ -3,7 +3,13 @@ import {FaRegEdit} from 'react-icons/fa'
 import { RiDeleteBinLine } from 'react-icons/ri'
 import { GrLocation } from 'react-icons/gr'
 import './ProfileCard.css'
-function ProfileCard({id,name,city,image,price}) {
+function ProfileCard({ id, name, city, image, price, deleteProperty }) {
+    const deleteProps =(e) => {
+        e.preventDefault()
+        deleteProperty(id)
+        
+       
+    }
     return (
         <div className="card">
             <img src={image} alt="" />
@@ -17,7 +23,8 @@ function ProfileCard({id,name,city,image,price}) {
                 <div id="baseline"></div>
                 <div className="engage-bar">
                     <span><FaRegEdit /></span>
-                    <span><RiDeleteBinLine /></span>
+                    <span onClick={deleteProps}><RiDeleteBinLine /></span>
+                    
                 </div>
             </div>
         </div>

@@ -32,7 +32,7 @@
     border-radius: 0.75rem;
     box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.08);
 }
-.search-bar select, input{
+.search-bar select, button{
     width: 11.25rem;
     height: 2.5rem;
     background-color: #F8F8F8;
@@ -40,15 +40,19 @@
     border-radius: 0.75rem;
     margin-right: 1.5rem;
     color: #2B2B2B;
+    padding-left: 0.5rem;
 }
-.search-bar input:focus{
-    outline:none;
+.search-bar button{
+    margin-left: auto;
+    background-color: #089BC9;
+    border: 0.02rem solid #089BC9;
+    color: #fff;
 }
 #search_logo2{
-      font-size: 1.70rem;
+      font-size: 1.80rem;
     position: relative;
     left: -2.50rem;
-    color: #2B2B2B;
+     color: #fff;
     cursor: pointer;
 }
 .search-bar input {

@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin: 0 ;
     padding:0;
     box-sizing: border-box;
     font-family: Poppins,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -33,13 +33,14 @@ body{
 .user-card{
     background-color: #fff;
     width: 17.25rem;
-    height: 25.19rem;
+    height: 32.69rem;
    margin-left: 2rem;
    border-radius: 0.75rem;
 }
 .user-details{
      display: flex;
-    justify-content: center;
+     flex-direction: column;
+    /* justify-content: center; */
     align-items: center;
 }
 #mark{
@@ -67,10 +68,11 @@ body{
 .contact-agnt{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .contact-agnt button{
-
-height: 2.25rem;
+width: 176px;
+height: 40px;
 border-radius: 0.75rem;
 font-size: 1.13rem;
 font-weight: 500;
@@ -79,6 +81,7 @@ background-color: #089BC9;
 color: #fff;
 margin-top: 1rem;
 border: none;
+margin-right: auto;
 }
 .contact-btn{
     width: 17.25rem;

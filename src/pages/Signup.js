@@ -22,7 +22,9 @@ const reducer = (state,action) => {
         case 'AGREEMENT_ERROR':
             return {...state,showError:true,errorMessage:'You must agree to terms and condition!'}
         case 'CLOSE_MODAL':
-            return {...state, showError:false}
+            return { ...state, showError: false }
+        case 'EMAIL_EXIST':
+            return {...state,showError:true, errorMessage:'Email already exist!'}
         default:
             return state;
     }
@@ -37,6 +39,7 @@ const instance = axios.create(
         baseURL: "",
         withCredentials: false,
         headers: {
+            'Content-Type':'application/json',
           'Access-Control-Allow-Origin' : '*',
           'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',   
       }
@@ -45,8 +48,8 @@ const instance = axios.create(
 
 function Signup({ showSignUp, clickeventIn, showConfirmation }) {
     // I used http://localhost:9000 for testing, please replace it with our Hiroku address.
-    // const url='https://ict-yep.herokuapp.com/api/v1/users'
-    const url = "http://localhost:9000/api/v1/users"
+    const url='https://ict-yep.herokuapp.com/api/v1/users'
+    // const url = "http://localhost:9000/api/v1/users"
    
     const [showPassword, setShowPassword] = useState(false)
     const [firstName, setFirstName] = useState('')
@@ -90,6 +93,7 @@ function Signup({ showSignUp, clickeventIn, showConfirmation }) {
             dispatch({ type: 'AGREEMENT_ERROR' })
         }
         else {
+            
             //function that submits the form data should be inserted here and a response should be requested before showConfirmation
             const response = await instance.post(url, {
                 firstName,
@@ -101,17 +105,24 @@ function Signup({ showSignUp, clickeventIn, showConfirmation }) {
             })
             console.log(response)
 
-            if (response.data.status === 'success') {
+           
                 if (response.data.status == 'success') {
-
+                    setFirstName('')
+                    setLastName('')
+                    setPhone('')
+                    setEmail('')
+                    setPassword('')
+                    setConfirmPassword('')
                     showConfirmation()
                 }
                 else {
+
+                    dispatch({type:'EMAIL_EXIST'})
                     // I am yet to create this modal
                     //showFailure()
                 }
             
-            }
+            
         }
     }
         const closeModal = () => {
