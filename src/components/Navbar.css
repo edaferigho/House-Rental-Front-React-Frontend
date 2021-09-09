@@ -79,7 +79,7 @@
 
 .show{
     display: block;
-    height: 18.75rem;
+    /* height: 18.75rem; */
     transform: translateX();
 }
 .nav-drawer>li{

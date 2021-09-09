@@ -44,7 +44,7 @@ function Property() {
     
     useEffect(() => {
         getProperty()
-        
+        // eslint-disable-next-line
     },[])
    //const [isShowMore,setIsShowMore] = useState(false)
     // const watsappLinker = (phoneNumber) => {

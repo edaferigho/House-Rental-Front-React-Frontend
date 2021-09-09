@@ -43,9 +43,12 @@ function Dashboard() {
         
    
     }
+    let value=''
     useEffect(() => {
+        // eslint-disable-next-line
+        value =''
         getProperties()
-    }, [])
+    },[value])
     // const location = useLocation()
     // console.log(location.state.user)
     // console.log(localStorage.getItem('authorization'))
