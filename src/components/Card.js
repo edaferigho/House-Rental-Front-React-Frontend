@@ -17,7 +17,7 @@ function Card({name,image,price,city,id,date}) {
                 <div className="card-details"><span><GrLocation /></span>
                     <p className="location">{city}</p>
                     <div className="vert-line"></div>
-                    <p className="price">{ price}</p>
+                    <p className="price">₦{ price}</p>
                 </div>
                 <div className="engage-bar">
                     <span><FaHeart /></span>

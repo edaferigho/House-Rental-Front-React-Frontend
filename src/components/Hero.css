@@ -7,13 +7,29 @@
 
 .hero{
     
-    margin-top:7.5rem
-
+    margin-top:7.5rem;
+    
+}
+.hero figure{
+    background-color: black;
+    position: relative;
 }
 .hero img{
     width: 100%;
     height: auto;
+    opacity: 0.5;
     
+}
+.hero figure h1{
+    position: absolute;
+    left: 7.5rem;
+    top: 7.5rem;
+    color: #fff;
+    font-size: 3rem;
+    width: 18.25rem;
+    font-weight: 900;
+    line-height: 4rem;
+    font-family:'Playfair Display SC','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 @media screen and (max-width:768px){
     .hero img{
@@ -28,7 +44,7 @@ width: 790px;
 height: 112px;
 position: relative;
 left: 2%;
-top: -50px;
+top: -66px;
 background: #FCFFFE;
 border-radius: 12px 12px 12px 12px;
 flex-wrap: wrap;
@@ -84,6 +100,7 @@ display: flex;
 position: relative;
 
 
+
 }
 .search-selector span{
    
@@ -108,16 +125,17 @@ position: relative;
    border: none;
    background-color: transparent;
    position: absolute;
+   width: 8.25rem;
    
 }
 .search-0 #selector{
-    left:40px;
+    left:10px;
 }
 .search-1 #selector{
-    left:50px;
+    left:10px;
 }
 .search-2 #selector{
-    left:16px;
+    left:30px;
 }
 #selector:focus{
     outline: none;

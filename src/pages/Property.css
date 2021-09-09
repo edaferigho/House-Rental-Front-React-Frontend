@@ -12,6 +12,7 @@ body{
     padding: 11.5rem 7.5rem 0 7.5rem;
 }
 .head{
+    width: 55.75rem;
     display: flex;
     justify-content: space-between;
 }
@@ -19,6 +20,9 @@ body{
  font-size: 1.5rem;
  line-height: 2.25rem;
  font-weight: 700;
+}
+.location{
+    font-size: 1.6rem;
 }
 .property-agent{
     display: flex;

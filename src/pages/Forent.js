@@ -12,15 +12,16 @@ import Footer from '../components/Footer';
 import Card from '../components/Card'
 function Forent() {
     const [properties, setProperties] = useState([]);
-    const [propertyType, setPropertyType] = useState('')
+    const [propertytype, setPropertyType] = useState('')
     const [city, setCity] = useState('')
-    const [noOfBedRooms,setNoOfBedrooms] = useState('')
-    const [maxPrice, setMaxPrice] = useState('')
-    const url = "https://ict-yep.herokuapp.com/api/v1/properties";
+    const [numberofrooms,setNoOfBedrooms] = useState('')
+    const [maxprice, setMaxPrice] = useState('')
+    const url = `https://ict-yep.herokuapp.com/api/v1/properties?`;
     const [isLoading,setIsLoading] = useState(true)
+    
 
     const search = () => {
-        axios.get(url, {data:{filterData:{ propertyType, city, noOfBedRooms, maxPrice }}}).then((response) => {
+        axios.get(url, {params:{ propertytype, city, numberofrooms, maxprice }}).then((response) => {
         if (response.data.data) {
     console.log(response)
     setProperties(response.data.data)
@@ -69,24 +70,44 @@ useEffect(() => {
                         <option value="" >Property Type</option>
                         <option value="Bungalow" >Bungalow</option>
                         <option value="Semi-Detached Duplex" >Semi-Detached Duplex</option>
+                        <option value="Semi-Detached Bungalow" >Semi-Detached Bungalow</option>
+                        <option value="Duplex" >Duplex</option>
+                        <option value="Warehouse" >Warehouse</option>
                     </select>
                      <select name="" id="" onChange={(e)=>setCity(e.target.value)}>
                         <option value="">Location</option>
                         <option value="Ughelli">Ughelli</option>
                         <option value="Asaba">Asaba</option>
+                        <option value="Warri">Warri</option>
+                        <option value="Ogwashi-Uku">Ogwashi-Uku</option>
+                        <option value="Kwale">Kwale</option>
+                        <option value="Ozoro">Ozoro</option>
+                        <option value="Oleh">Oleh</option>
                     </select>
                      <select name="" id="" onChange={(e)=>setNoOfBedrooms(e.target.value)}>
                         <option value="">No. of Bedrooms</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
                     </select>
                      <select name="" id="" onChange={(e)=>setMaxPrice(e.target.value)}>
-                        <option value="">Amount Range</option>
+                        <option value="">Price Range</option>
                         <option value="40000">40000</option>
+                        <option value="50000">50000</option>
+                        <option value="60000">60000</option>
+                        <option value="70000">70000</option>
+                        <option value="80000">80000</option>
+                        <option value="90000">90000</option>
+                        <option value="100000">100000</option>
                         <option value="800000">800000</option>
-                          <option value="450000">450000</option>
+                        <option value="900000">900000</option>
+                        <option value="1000000">1000000</option>
                     </select>
                     
                     
-                <button id="search_logo2" onClick={search}><FiSearch /></button>
+                <button id="search-btn" onClick={search}><span><FiSearch /></span></button>
             
                  
                 </div>

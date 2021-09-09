@@ -1,6 +1,4 @@
 import {React,useEffect,useState} from 'react'
-import ReactPagenate from 'react-paginate'
-import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 import axios from 'axios'
 import './Featured.css'
 import Card from '../components/Card';
@@ -10,10 +8,10 @@ import Loader from './Loader'
 // const url = "http://localhost:9000/api/vi/properties"
 const url = "https://ict-yep.herokuapp.com/api/v1/properties"
 
-function Featured() {
+function Featured({searchedProperties}) {
     const [properties, setProperties] = useState([])
     const [isLoading,setIsLoading] = useState(true)
-
+    console.log(searchedProperties)
     const getData = async() => {
         const response = await axios.get(url)
         
@@ -24,7 +22,11 @@ function Featured() {
             setIsLoading(false)
             // console.log(properties)
         }
+        
     }
+    
+       
+    
     useEffect(() => {
        getData ()
     },[])
@@ -49,7 +51,6 @@ function Featured() {
         <div className="featured">
             <div className="header">
                 <h4>Featured Rentals</h4>
-                <img src="/assets/customercare.png" alt="" />
             </div>
             {isLoading&& <Loader />}
             <div className="featured-card">

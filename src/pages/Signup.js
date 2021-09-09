@@ -106,7 +106,7 @@ function Signup({ showSignUp, clickeventIn, showConfirmation }) {
             console.log(response)
 
            
-                if (response.data.status == 'success') {
+                if (response.data.status === 'success') {
                     setFirstName('')
                     setLastName('')
                     setPhone('')
@@ -118,8 +118,7 @@ function Signup({ showSignUp, clickeventIn, showConfirmation }) {
                 else {
 
                     dispatch({type:'EMAIL_EXIST'})
-                    // I am yet to create this modal
-                    //showFailure()
+                    
                 }
             
             

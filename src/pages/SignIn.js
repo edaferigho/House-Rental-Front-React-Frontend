@@ -66,7 +66,8 @@ function SignIn({ showSignIn, clickeventUp,setIsShowSigIn }) {
             
             // <Redirect to="/dashboard" />
             // submit to backend
-            history.push({pathname:`dashboard/${response.data.user._id}`,state:{user:response.data.user}})
+                history.push({ pathname: `dashboard/${response.data.user._id}`, state: { user: response.data.user } })
+                localStorage.setItem('userId',response.data.user._id)
             setIsShowSigIn(false) 
             
            

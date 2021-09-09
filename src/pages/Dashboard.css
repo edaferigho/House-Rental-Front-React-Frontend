@@ -2,13 +2,14 @@
 .dashboard{
     background-color: #E5E5E5;
     padding-bottom: 4rem;
-    /* display: flex; */
+    
 }
 .dashboard_nav{
     width: 22.5rem;
    height: 127rem;
    background-color:#089BC9;
    position: fixed;
+   float: left;
    top: 7.5rem;
    left: 0;
    overflow-x: hidden;
@@ -24,9 +25,14 @@
     font-weight: 600;
     margin-bottom: 2.31rem;
 }
-.dashboard_nav ul >li a{
+.dashboard_nav ul >li a,.dashboard_nav ul >li{
+    text-decoration: none;
+    color: rgb(226, 221, 221);
+}
+.dashboard_nav ul >li a:hover,.dashboard_nav ul >li:hover{
     text-decoration: none;
     color: #fff;
+    cursor: pointer;
 }
 .dashboard_nav ul >li span{
     margin-right: 2.25rem;
@@ -35,10 +41,11 @@
     background-color: transparent;
     width: 75%;
     position: relative;
+    float: right;
     top: 7.5rem;
     margin-top: 2rem;
-    margin-left: 22.5rem;
-    margin-right: 7.63rem;
+    margin-left: 25.5rem;
+    margin-right: .63rem;
     padding-left: 4.25rem;
     margin-bottom: 10rem;
     
@@ -62,11 +69,12 @@
     background-color: #089BC9;
     color: #fff;
     position: relative;
-    left: 73%;
+    left: 68%;
     border: none;
     cursor: pointer;
 }
 .properties{
+    width: 90%;
     margin-top: 2rem;
      display: grid;
    grid-template-columns: 1fr 1fr 1fr;

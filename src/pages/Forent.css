@@ -48,18 +48,19 @@
     border: 0.02rem solid #089BC9;
     color: #fff;
 }
-#search_logo2{
-      font-size: 1.80rem;
-    position: relative;
-    left: -2.50rem;
-     color: #fff;
-    cursor: pointer;
-}
-.search-bar input {
+#search-btn{
     margin-left: auto;
     margin-right: 0;
     padding-left: 0.88rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+#search-btn span{
+    font-size: 1.88rem;
+    
+}
+
 .property_collection{
     margin-top: 4rem;
     margin-left: 8.33%;
@@ -70,13 +71,6 @@
     margin-bottom: 5.06rem;
     grid-template-columns: 2fr 2fr 2fr 2fr !important;
     grid-template-rows: 0fr 0fr !important;
-    gap: 1.1%;
-
-      display: grid;
-      width: 83.33%;
-      margin-bottom: 5.06rem;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
-   /* grid-template-rows: 1fr 1fr; */
    gap: 4.2rem;
 
    

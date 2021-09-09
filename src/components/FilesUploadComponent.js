@@ -39,10 +39,10 @@ const FileUploadComponent = ({setAllFiles,setFiles}) => {
         console.log(status, meta, file) 
     }
 
-    const onSubmit = (files, allFiles) => {
-        allFiles.forEach(f => f.remove())
-        console.log(files.map(f => f.meta))
-    }
+    // const onSubmit = (files, allFiles) => {
+    //     allFiles.forEach(f => f.remove())
+    //     console.log(files.map(f => f.meta))
+    // }
 
     const getFilesFromEvent = e => {
         return new Promise(resolve => {

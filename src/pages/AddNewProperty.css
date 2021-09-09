@@ -2,6 +2,9 @@
 .form_container{
   width: 70% !important;
 }
+.modal-row{
+  text-align: center;
+}
 .myform{
 position: absolute;
 width: 70% !important;
@@ -23,6 +26,9 @@ line-height: 27px;
 text-transform: capitalize;
 color: #000000;
 /* border: 1px solid #089BC9; */
+}
+.input{
+  padding-left: 3%;
 }
 .inputTitle{
 width: 100%;

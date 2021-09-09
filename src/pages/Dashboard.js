@@ -4,13 +4,12 @@ import ReactPagenate from 'react-paginate'
 import { FiHome, FiPower } from 'react-icons/fi'
 import {IoIosArrowBack,IoIosArrowForward} from 'react-icons/io'
 //import { BsEnvelope } from 'react-icons/bs'
-import { Link,useLocation } from 'react-router-dom'
+import { Link,useHistory } from 'react-router-dom'
 import './Dashboard.css'
 import ProfileCard from '../components/ProfileCard'
 import NavbarUser from '../components/NavbarUser'
 
-//import Footer from '../components/Footer'
-// import properties from '../data' 
+ 
 const url = 'https://ict-yep.herokuapp.com/api/v1/agents/properties/'
 const config = {
     headers: { 'Authorization': localStorage.getItem('authorization') }
@@ -19,14 +18,20 @@ const config = {
 
 
 function Dashboard() {
+    const history = useHistory()
     const [properties, setProperties] = useState([])
     const [pageNumber, setPageNumber] = useState(0)
     
     // delete Property
     const deleteProperty = async (id) => {
-    const response = await axios.delete(`https://ict-yep.herokuapp.com/api/v1/agents/properties/${id}`,config)
+     axios.delete(`https://ict-yep.herokuapp.com/api/v1/agents/properties/${id}`,config)
     getProperties()
 
+    }
+    const signOut = () => {
+        localStorage.setItem("authorization", null)
+        localStorage.setItem("userId", null)
+        history.push("/")
     }
     // get properties
     const getProperties = async () => {
@@ -64,7 +69,7 @@ function Dashboard() {
                 <ul>
                     <li><Link to="/dashboard"><span><FiHome /></span> Dashboard</Link></li>
                     {/* <li><Link><span><BsEnvelope /></span>Client Request</Link></li> */}
-                    <li><Link to="/"><span><FiPower /></span>Sign Out</Link></li>
+                    <li onClick={signOut}><span><FiPower /></span>Sign Out</li>
                 </ul>
             </div>
                 <div className="dashboard_content">

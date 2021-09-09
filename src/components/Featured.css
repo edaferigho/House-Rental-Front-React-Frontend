@@ -8,7 +8,7 @@
 .featured{
     width: 85%;
     background-color: transparent;
-    margin:7.56rem auto;
+    margin:4rem auto 7.56rem auto;
 
     /* background-color: crimson; */
     /* margin: 0px !important; */
@@ -33,59 +33,16 @@
    
 }
 .featured-card{
-
-   display: grid;
-   grid-template-columns: 2fr 2fr 2fr 2fr !important;
-   grid-template-rows: 0fr 0fr !important;
-   gap: 1.1%;
+     display: grid;
+    width: 83.33%;
+    margin-bottom: 5.06rem;
+    grid-template-columns: 2fr 2fr 2fr 2fr !important;
+    grid-template-rows: 0fr 0fr !important;
+    gap: 4.2rem;
+  
    
 }
 
-/* .paginationButtons{
-
-    display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
-   grid-template-rows: 1fr 1fr;
-   gap: 4rem;
-   
-}
-
-.paginationButtons{
-    width: 17.56rem;
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    margin:4rem auto;
-   
-    
-
-} */
-/* .paginationButtons a{
-
-}
-.paginationButtons a{
-    width: 2rem;
-    height: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  border: 0.06rem solid #DFE3E8;
-    border-radius: 0.25rem;
-    background-color: #fff;
-    cursor:pointer;
-}
-.paginationActive{
-    border: 0.06rem solid #089BC9;
-    color:#089BC9;
-}
-.previousButton,.nextButton{
-    color: #DFE3E8;
-}
-.previousButton:hover,.nextButton:hover{
-    background-color: #919EAB;
-    opacity: 0.5;
-    color:#C4CDD5;
-} */
 
 .horzontal-line{
     border-top: 0.13rem solid #C4C4C4;

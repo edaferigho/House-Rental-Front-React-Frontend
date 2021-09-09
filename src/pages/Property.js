@@ -9,8 +9,7 @@ import { FiMessageCircle } from 'react-icons/fi'
 import { useParams } from 'react-router-dom/cjs/react-router-dom.min'
 import './Property.css'
 import '@splidejs/splide/dist/css/themes/splide-skyblue.min.css';
-//import NavbarUser from '../components/NavbarUser'
-import NavBar from '../components/NavBar';
+
 import Footer from '../components/Footer'
 
 
@@ -48,19 +47,18 @@ function Property() {
         
     },[])
    //const [isShowMore,setIsShowMore] = useState(false)
-    const watsappLinker = (phoneNumber) => {
-        window.location.href = `https://wa.me/${phoneNumber}`
-    }
+    // const watsappLinker = (phoneNumber) => {
+    //     window.location.href = `https://wa.me/${phoneNumber}`
+    // }
     return (
         <div >
-            {/* <NavBar /> */}
             <div className="property">
                
                 <div className="head">
                     <p>{ property.propertyType}</p>
-                    {property&&<p>{ `₦${property.propertyPrice}`}</p>}
+                    {property&&<p>{ `₦${property.propertyPrice}`}/Year</p>}
                 </div>
-                <p><span><GrLocation /></span>{ property.city}</p>
+                <p><span className="location"><GrLocation /></span>{ property.city}</p>
                 <div className="property-agent">
                     {property && <img src={property.propertyImages[0]} alt="" />}
                     <div>

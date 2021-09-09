@@ -18,7 +18,7 @@ function ProfileCard({ id, name, city, image, price, deleteProperty }) {
                 <div className="card-details"><span><GrLocation /></span>
                     <p className="location">{ city}</p>
                     <div className="vert-line"></div>
-                    <p className="price">{ price}</p>
+                    <p className="price">₦{ price}</p>
                 </div>
                 <div id="baseline"></div>
                 <div className="engage-bar">

@@ -14,9 +14,9 @@ import Dashboard from './pages/Dashboard';
 import Confirmation from './components/Confirmation';
 import Forent from './pages/Forent';
 import AddNewProperty from './pages/AddNewProperty';
-//import Loader from './components/Loader';
 
-import Loader from './components/Loader';
+
+
 
 
 
@@ -25,14 +25,14 @@ function App() {
   const [isShowSignUp, setIsShowSignUp] = useState(false)
   const [isShowSigIn, setIsShowSigIn] = useState(false)
   const [confirmation, setConfirmation] = useState(false)
-  const [propertyConfirmation,setPropertyConfirmation] = useState(false)
+ 
 
 
   const hide = () => {
     setIsShowSignUp(false)
     setIsShowSigIn(false)
     setConfirmation(false)
-    setPropertyConfirmation(false)
+   
   }
    
   const showSignUp = () => {
@@ -49,9 +49,7 @@ function App() {
     setConfirmation(true)
     
   }
-  const showPropertyConfirmation = () => {
-    setPropertyConfirmation()
-  }
+  
 
   return (
     <Router>
